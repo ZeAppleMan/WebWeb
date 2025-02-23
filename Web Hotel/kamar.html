@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pilih Hotel</title>
+    <link rel="stylesheet" href="kamar.css">
+</head>
+<body>
+
+<div class="container">
+    <h2>Pilih Hotel</h2>
+    
+    <div class="hotel-list">
+        <!-- Daftar hotel -->
+        <div class="hotel-card" onclick="selectHotel('Hotel A')">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhoeZ9wmSDAhLgCCFiVO2cnJWLYqLYtBrgXA&s" alt="hotel A" class="kmr image">
+            <h3>Hotel A</h3>
+            <p>Lokasi: Jakarta</p>
+            <p>Rating: 4.5 ★</p>
+        </div>
+        <div class="hotel-card" onclick="selectHotel('Hotel B')">
+            <img src="" alt="hotel B" class="kmr image">
+            <h3>Hotel B</h3>
+            <p>Lokasi: </p>
+            <p>Rating: 4.7 ★</p>
+        </div>
+        <div class="hotel-card" onclick="selectHotel('Hotel C')">
+            <img src="" alt="hotel C" class="kmr image">
+            <h3>Hotel C</h3>
+            <p>Lokasi: Surabaya</p>
+            <p>Rating: 4.3 ★</p>
+        </div>
+    </div>
+
+    <div class="result">
+        <p id="selectedHotel">Pilih hotel untuk melanjutkan pemesanan kamar.</p>
+        <button id="bookButton" style="display: none;" onclick="redirectToBooking()">Lanjutkan ke Pemesanan Kamar</button>
+    </div>
+</div>
+
+<script src="kmr.js"></script>
+
+</body>
+</html>

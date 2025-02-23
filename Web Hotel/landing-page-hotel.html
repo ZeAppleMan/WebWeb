@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Greenwich</title>
+    <link rel="stylesheet" href="style.hotel.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <h1>Hotel Greenwich</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#">Beranda</a></li>
+                <li><a href="#about">Tentang Kami</a></li>
+                <li><a href="#services">Fasilitas</a></li>
+                <li><a href="#booking">Pesan Sekarang</a></li>
+                <li><a href="#contact">Kontak</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h2>Selamat Datang di Hotel Greenwich</h2>
+            <p>Liburan yang menyenangkan dimulai di sini</p>
+            <a href="#booking" class="btn-primary">Pesan Sekarang</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2>Tentang Hotel Greenwich</h2>
+            <p>Hotel Greenwich adalah destinasi liburan mewah yang terletak di alam, menawarkan kenyamanan, kemewahan, dan pengalaman tak terlupakan. Kami menyediakan layanan terbaik untuk memastikan Anda merasa seperti di rumah sendiri.</p>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2>Fasilitas Kami</h2>
+            <div class="services-list">
+                <div class="service">
+                    <img src="fromandroid-e3d5a4da430da84d71172ac5894e9719.jpg" alt="Swimming Pool">
+                    <h3>Kolam Renang</h3>
+                    <p>Kolam renang luar ruangan dengan pemandangan yang menakjubkan.</p>
+                </div>
+                <div class="service">
+                    <img src="https://massage.co.id/wp-content/uploads/2023/08/Sekilas-Tentang-Lembah-Spa-dan-Lokasinya.png" alt="Spa">
+                    <h3>Spa & Wellness</h3>
+                    <p>Relaksasi tubuh dengan layanan spa premium di fasilitas kami.</p>
+                </div>
+                <div class="service">
+                    <img src="https://awsimages.detik.net.id/community/media/visual/2020/02/14/54604242-f8cc-43fc-8b6d-09e539684b30_169.jpeg?w=600&q=90" alt="Restaurant">
+                    <h3>Restoran Mewah</h3>
+                    <p>Restoran berbintang yang menyajikan kuliner internasional dan lokal.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Section -->
+    <section id="booking" class="booking">
+        <div class="container">
+            <h2>Pesan Sekarang</h2>
+            <form action="#" method="POST">
+                <div class="input-group">
+                    <label for="name">Nama Lengkap</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="input-group">
+                    <label for="checkin">Tanggal Check-in</label>
+                    <input type="date" id="checkin" name="checkin" required>
+                </div>
+                <div class="input-group">
+                    <label for="checkout">Tanggal Check-out</label>
+                    <input type="date" id="checkout" name="checkout" required>
+                </div>
+                <div class="input-group">
+                    <label for="rooms">Jumlah Kamar</label>
+                    <input type="number" id="rooms" name="rooms" min="1" required>
+                </div>
+                <button type="submit" class="btn-primary">Kirim Pemesanan</button>
+            </form>
+        </div>
+    </section>
+
+    <section id="rooms-selection" class="rooms-selection">
+        <div class="container">
+            <h2>Pilih Kamar Anda</h2>
+            <p>Hotel Greenwich menawarkan berbagai jenis kamar yang dapat disesuaikan dengan kebutuhan Anda. Pilih kamar yang paling sesuai untuk liburan Anda.</p>
+            
+            <div class="rooms-list">
+                <!-- Room 1 -->
+                <div class="room">
+                    <img src="https://via.placeholder.com/400x300?text=Deluxe+Room" alt="Deluxe Room">
+                    <h3>Kamar Deluxe</h3>
+                    <p>Kamar luas dengan pemandangan indah, cocok untuk pasangan atau keluarga kecil.</p>
+                    <ul>
+                        <li>1 Tempat Tidur King</li>
+                        <li>Wi-Fi Gratis</li>
+                        <li>TV LED</li>
+                        <li>Minibar</li>
+                        <li>Pemandangan Laut</li>
+                    </ul>
+                    <p class="price">Rp 1.200.000/malam</p>
+                    <button class="btn-primary" onclick="raiden()">Pilih Kamar</button>
+                </div>
+    
+                <!-- Room 2 -->
+                <div class="room">
+                    <img src="https://via.placeholder.com/400x300?text=Superior+Room" alt="Superior Room">
+                    <h3>Kamar Superior</h3>
+                    <p>Kamar nyaman dengan fasilitas modern, ideal untuk perjalanan bisnis atau liburan santai.</p>
+                    <ul>
+                        <li>1 Tempat Tidur Queen</li>
+                        <li>Wi-Fi Gratis</li>
+                        <li>TV LED</li>
+                        <li>Minibar</li>
+                        <li>Pemandangan Taman</li>
+                    </ul>
+                    <p class="price">Rp 900.000/malam</p>
+                    <button class="btn-primary">Pilih Kamar</button>
+                </div>
+    
+                <!-- Room 3 -->
+                <div class="room">
+                    <img src="https://via.placeholder.com/400x300?text=Family+Room" alt="Family Room">
+                    <h3>Kamar Keluarga</h3>
+                    <p>Kamar besar dengan dua tempat tidur, ideal untuk keluarga atau kelompok yang bepergian bersama.</p>
+                    <ul>
+                        <li>2 Tempat Tidur Queen</li>
+                        <li>Wi-Fi Gratis</li>
+                        <li>TV LED</li>
+                        <li>Minibar</li>
+                        <li>Pemandangan Kolam Renang</li>
+                    </ul>
+                    <p class="price">Rp 1.500.000/malam</p>
+                    <button class="btn-primary">Pilih Kamar</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Kontak Kami</h2>
+            <p>Jika Anda memiliki pertanyaan, jangan ragu untuk menghubungi kami.</p>
+            <p>Email: info@hotelgreenwich.com</p>
+            <p>Telepon: +62 896 185 009 20</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Hotel Greenwich. Semua Hak Dilindungi.</p>
+        </div>
+    </footer>
+
+    <script src="landing.page.js"></script>
+</body>
+</html>
